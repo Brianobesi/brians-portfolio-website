@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins'; 
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+.header{
+position: fixed;
+top: 1rem;
+left:50%;
+transform: translateX(-50%);
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 5rem;
+background-color: rgb(14, 0, 0);
+color: white;
+padding:0.5rem 1.5rem;
+border-radius:50px;
+z-index: 1000;
+}
+.logo{
+color:aliceblue;
+font-size: 1.3rem;
+font-weight: 600;
+text-wrap: nowrap;
+transition: 0.3s ease ease-in-out
+cursor: pointer;
+
+}
+.logo:hover {
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+.logo:active {
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+.navigation-link{
+display:flex;
+gap: 16px;
+}
+li a{
+    color: aliceblue;
+    cursor:pointer;
+    
+}
+li a:hover{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+li a:active{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+#menu-icon{
+ font-size:2rem;
+ display:none;
+}
+.visit-github{
+color:white;
+background-color:rgb(14, 0, 0);
+border: solid;
+border-width: 1px;
+border-color: red;
+border-radius: 20px;
+padding: 0.5rem 1rem;
+size: 20px;
+text-wrap: nowrap;
+
+}
+.visit-github:hover{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.9;
+    transition: 0.3s ease ease-in-out
+}
+.visit-github:active{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.3; 
+    transition: 0.3s ease ease-in-out
+}
+/*--------this is where the about CSS begins---------*/
+section{
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+
+}
+.about{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+.about .about-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+
+}
+.about img{
+    width:300px;
+    height:auto;
+    border-radius: 10%;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+}
+.text {
+    text-align: center;
+}
+.text h1{
+    color:red;
+}
+.details-documents{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+.cv-button{
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    size: 20px;
+    text-wrap: nowrap; 
+    border-radius: 15px;
+}
+.cv-button:hover{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.9;
+    transition: 0.3s ease ease-in-out
+}
+.cv-button:active{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.3; 
+    transition: 0.3s ease ease-in-out
+}
+.gitgub-icon{
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.3s ease ease-in-out
+}
+.gitgub-icon:hover{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.9;
+    transition: 0.3s ease ease-in-out
+}
+.gitgub-icon:active{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.3; 
+    transition: 0.3s ease ease-in-out
+}
+/*--------this is where the experience CSS begins---------*/
+.experience-title{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.experience-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+/* Hover effect for grid items */
+.fourgrid {
+    border: solid;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 3rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgb(252, 247, 247);
+}
+
+.fourgrid:hover {
+    background-color: rgb(50, 50, 50);
+    transform: translateY(-10px) scale(1.05);
+    color: white;
+    border-color: black;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.fourgrid i {
+    font-size: 3rem;
+    transition: color 0.3s ease;
+}
+
+.fourgrid:hover i {
+    color: white;
+}
+
+.fourgrid p {
+    font-size: 1rem;
+    color: red;
+    transition: color 0.3s ease;
+}
+
+.fourgrid:hover p {
+    color: red;
+}
+
+.two-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+/*--------this is where the project CSS begins---------*/
+.Project-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.project-one img{
+    width: 100%; /* The image will take up the full width of its container */
+    height: auto; /* Keeps the aspect ratio intact */
+    max-width: 300px; /* Limits the width to 300px */
+    max-height: 200px; /* Ensures the image does not exceed this height */
+    object-fit: contain; /* Keeps the aspect ratio while fitting inside the container */
+    border-radius: 3rem;
+}
+.project-title{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.project-one {
+    border: solid;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-one:hover {
+    background-color: rgb(50, 50, 50);
+    transform: translateY(-10px) scale(1.05);
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.project-one img {
+    width: 300px;
+    height: auto;
+    border-radius: 3rem;
+}
+
+.project-title {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.project-one button{
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    size: 20px;
+    text-wrap: nowrap; 
+    border-radius: 15px;
+}
+.project-one button:hover{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.9;
+    transition: 0.3s ease ease-in-out 
+}
+.project-one button:active{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.3; 
+    transition: 0.3s ease ease-in-out   
+}
+/*--------this is where the contact CSS begins---------*/
+.input-inbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.button-submit{
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    cursor: pointer;
+    padding: 0.5rem 5rem;
+    size: 20px;
+    text-wrap: nowrap; 
+    border-radius: 15px;
+}
+.button-submit:hover{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.9;
+    transition: 0.3s ease ease-in-out
+}
+.button-submit:active{
+    color: red; 
+    transform: scale(1.1);
+    opacity: 0.3; 
+    transition: 0.3s ease ease-in-out
+}
+.input-inbox input{
+    border-radius: 3rem;
+    border:1px solid black;
+    padding: 2rem 8rem;
+    font-size: 2rem;
+
+}
+.input-inbox input::placeholder{
+    font-size: 2rem;
+
+}
+.input{
+    position: relative;
+}
+.input i{
+    position: absolute;
+    font-size: 4rem;
+    top:50%;
+    left: 10px;
+    transform: translate(50%, -50%);
+}
+/*--------this is where the footer CSS begins---------*/
+footer{
+    bottom: 0;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+footer ul li a{
+    color: black;
+    font-weight: 600;
+
+}
+.copyright{
+    font-size: 300;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media(max-width:1280px){
+  .header{
+    padding:1rem 2rem;
+    gap: 2rem;
+  }
+  .about .about-container{
+    gap:0.5rem;
+  }
+  .experience-info{
+    flex-direction: column;
+  }
+  .Project-info{
+    flex-direction: column;
+  }
+  .input-inbox input{
+    padding: 2rem 5rem;
+    font-size: 2.5rem;
+  }
+  .input-inbox input::placeholder{
+    font-size: 2.5rem;
+  }
+  .input-inbox input{
+    font-size: 2.5rem;
+  }
+  .project-one img {
+    width: 200px;
+  }
+}
+@media(max-width:768px){
+    .header{
+        padding:1rem 1rem;
+        gap: 1rem;
+      }
+      .header .logo{
+        font-size: 1rem;
+      }
+      .visit-github{
+        display: none;
+      }
+      .about .about-container{
+        gap:0.5rem;
+      }
+      .info-box{
+        display: flex;
+      }
+      .experience-info{
+        flex-direction: column;
+      }
+      .Project-info{
+        flex-direction: column;
+      }
+      .input-inbox input{
+        padding: 1rem 1rem;
+        font-size: 2rem;
+      }
+      .input i{
+        display: none;
+      }
+      .input-inbox input::placeholder{
+        font-size: 1.5rem;
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+      .input-inbox input{
+        font-size: 2rem;
+      }
+     
+}
+@media(max-width:600px){
+    #menu-icon{
+        font-size:2rem;
+        display:block;
+       }
+       .header .logo{
+        display: none;
+      }
+      .navigation-link{
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        border-radius: 3rem;
+        }
+}
